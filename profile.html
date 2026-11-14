@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F4F1DE;
+            color: #2F3E2F;
+        }
+
+        .con {
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background-color: #588157;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            padding: 10px;
+        }
+        .header img {
+            width: 50px; 
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px;
+            margin-top: 3px;
+            background-color: #588157;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="header">
+            <h1>Profile</h1>
+            <img src="default-avatar.webp" alt="Default Avatar">
+        </div>
+        <div class="form">
+            <form action="profile.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="TTG">Tanggal Lahir:</label>
+                <input type="date" id="TTG" name="TTG" required><br><br>
+
+                <label for="gender" id="gender">Gender:</label>
+                <section>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label><br>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </section> <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="bio">Bio:</label><br>
+                <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="simpan">
+            </form>
+            <br>
+            <a href="index.html">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
